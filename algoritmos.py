@@ -62,4 +62,4 @@ def insertion_sort(lista):
 
 # 5. Algoritmo de Selection Sort
 # 6. Bubble Sort
-# 8. Quick Sort 
+# 8. Quick Sort
