@@ -48,3 +48,21 @@ def exerc4():
   print('Está em maiúscula?', inp.isupper());
 # exerc4();
 
+# CALCULAR A RAIZ QUADRADA DE UM Nº É A MESMA COISA QUE CALCULAR  A POTÊNCIA DELE POR MEIO (1/2) 
+def raizQuadrada(num):
+  print(f'{num**(1/2)}')
+# raizQuadrada(2890238902)
+
+# RAIZ CÚBICA É A POTÊNCIA DO Nº A UM TERÇO 1/3
+def raizCubica(num):
+  print(f'{num ** (1/3)}')
+# raizCubica(92)
+
+# taboada de um nº
+def taboada(num):
+  i = 1;
+  while i <= 9:
+    result = num * i;
+    print(f'{num} * {i} = {result}');
+    i = i + 1;
+taboada(9)
