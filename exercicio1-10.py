@@ -113,4 +113,9 @@ def conversorTemperatura(celsius):
 # conversorTemperatura(31.5)
 
 # 15. Aluguel de carros
-
+def AlugarCarro():
+  diasAlugado = int(input('Por quantos dias você rodou com ele? '))
+  kmRodados = float(input('Quantos km o carro percorreu? '))
+  valorAluguelCarro = (diasAlugado * 60) + (kmRodados * 0.15)
+  print(f'O valor do aluguel é de {valorAluguelCarro:.2f}')
+# AlugarCarro();
