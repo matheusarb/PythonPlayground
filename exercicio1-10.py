@@ -58,11 +58,59 @@ def raizCubica(num):
   print(f'{num ** (1/3)}')
 # raizCubica(92)
 
-# taboada de um nº
-def taboada(num):
+# 8. Ler valor em metros e exibir convertido em centimetros e milimetros
+def converterMetros():
+  inp = float(input('Digite a metragem: '));
+  cm = inp * 100
+  mm = inp * 1000
+  print(f'A metragem {inp}m em centímetros é: {cm:.0f}cm e milímetros é: {mm:.0f}mm');
+# converterMetros();
+
+# 9. Tabuada de um nº
+def tabuada(num):
   i = 1;
-  while i <= 9:
+  print('-'*10)
+  while i <= 10:
     result = num * i;
-    print(f'{num} * {i} = {result}');
+    print(f'{num} x {i} = {result}');
     i = i + 1;
-taboada(9)
+# tabuada(5)
+
+# 10. Programa que leia qnto dinheiro existe na carteira e quantos dólares ela pode comprar
+def comprarDolar(real):
+  dolar = real / 3.27
+  print(f'Eu tenho {real} reais. Posso comprar {dolar:.2f} dólares')
+# comprarDolar(30.32)
+
+# 11. Programa pra ler a largura e a altura de uma parede em metros, 
+# calcular a sua área e a quantidade de tinta necessária para pintá-la
+# a cada 2m² eu usarei 1L de tinta
+# área = base x altura
+def calcAreaTinta(largura, altura):
+  area = float(largura*altura);
+  tinta = area / 2; #1l de tinta pra cara 2m. ENtão, divido por dois
+  print(f'A área total da parede é de {area:.2f}. A quantidade de tinta será de {tinta:.2f}')
+# calcAreaTinta(5.75, 5.12)
+
+# 12. Desconto de 5% no produto
+def descontoProduto(preco):
+  desconto = preco * 0.05;
+  print(f'O produto custa {preco:.2f} reais mas sairá por {preco - desconto:.2f}')
+# descontoProduto(927.23)
+
+# 13. Salário do funcionário com 15% de aumento
+def aumentoSalarial(salario):
+  aumento = 1.15;
+  aumento2 = 115/100;
+  salarioFinal = salario * aumento
+  print(f'Seu salário hoje é de {salario:.2f}. Aumentado 15% ficará {salarioFinal:.2f}')
+# aumentoSalarial(10000)
+
+# 14. Conversão de temperatura de celsius pra farenheit
+def conversorTemperatura(celsius):
+  farenheit = celsius * 1.8 + 32;
+  print(f'A temperatura em celsius é {celsius}ºC, e em farenheit é {farenheit}ºF')
+# conversorTemperatura(31.5)
+
+# 15. Aluguel de carros
+
